@@ -1,4 +1,4 @@
-package com.sysbanca.teste.controle.servico;
+package com.sysbanca.teste.servico;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -25,7 +25,9 @@ public class ServicoBanca {
 
     //Método para cadastro
     public ResponseEntity <?> cadastrar(ModeloBanca mb){
+        
         return new ResponseEntity<ModeloBanca>(rb.save(mb), HttpStatus.CREATED);
+
     }
 
 

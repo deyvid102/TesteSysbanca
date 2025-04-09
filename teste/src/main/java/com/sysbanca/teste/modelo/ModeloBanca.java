@@ -5,6 +5,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
+
 import java.sql.Time;
 import lombok.Getter;
 import lombok.Setter;
@@ -19,9 +21,13 @@ public class ModeloBanca {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo;
     
+    @NotNull
     private String descricao;
+    @NotNull
     private Time horario;
+    @NotNull
     private Time bloqueio;
+    
     private int premiacao;
 
     private String segunda;

@@ -1,0 +1,152 @@
+
+        h2{
+            font-family: verdana;
+            font-size: 15pt;
+            text-align: center;
+        }
+        h3{
+            font-family: candara;
+            font-size: 14pt;
+        }
+            
+        p {
+
+            font-family: candara;
+            font-size: 12pt;
+        }
+        label{
+
+            font-family: candara;
+            font-size: 12pt;          
+        }
+
+        form{
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            border-radius: 11px;
+        }
+        input#b{
+            border-radius: 1px;
+            border: 1px;
+
+        }
+        fieldset{
+            color: black;
+            font-weight: bold;
+            font-size: 12pt;
+            font-family: candara;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px lightgray;
+        }
+        fieldset#f1{
+            background-color: #66CCFF;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px lightgray;
+        }
+        fieldset#f2{
+            background-color: #66CCFF;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px lightgray;
+           } 
+        fieldset#f02{
+            background-color: #66CCFF;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px lightgray;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        fieldset#f3{
+            background-color: #66CCFF;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px lightgray;
+            text-align: center;
+        }
+
+
+        div#regiao{
+            width: 100px;
+        }
+        div#area{
+            width: 200px;
+        }
+        input:hover {
+            background-color: lightgray;
+
+        }
+        div#corpo
+        {
+            font-family: Tahoma;
+            text-align: center;
+            font-size: 12pt;
+        }
+        fieldset#brapidinha {
+            width: 138px;
+            height: 37px;
+            display: inline-block;
+            background-color: #66CCFF;
+            text-align: center;
+            box-shadow: 2px 2px 2px lightgray;
+       }
+       fieldset#cpremio{
+            width: 130px;
+            height: 37px;
+            display: inline-block;
+            background-color: #66CCFF;
+            text-align: center;   
+            box-shadow: 2px 2px 2px lightgray; 
+           } 
+       fieldset#cpremio2{
+            width: 130px;
+            height: 37px;
+            align-content: center;
+            background-color: #66CCFF;
+            text-align: center;   
+            box-shadow: 2px 2px 2px lightgray;
+}
+
+       fieldset#cpremio02{
+            width: 300px;
+            height: 25px;
+            align-content: center;
+            background-color: #66CCFF;
+            text-align: center;   
+            box-shadow: 2px 2px 2px lightgray;
+}
+
+        fieldset#cpremio002{
+            width: 350px;
+            height: 100px;
+            align-content: center;
+            background-color: #66CCFF;
+            text-align: center;   
+            box-shadow: 2px 2px 2px lightgray;
+        
+       }
+       fieldset#cpoule{
+            width: 112px;
+            height: 37px;
+            display: inline-block;
+            background-color: #66CCFF;
+            text-align: center;
+            box-shadow: 2px 2px 2px lightgray;
+        
+    
+        }
+
+       div#rodape{
+        text-align: right;
+       }
+       div#voltar{
+            alignment-baseline: absolute;
+       }
+       fieldset .grupo .campo{
+            float: left;
+            margin-right: 1em;
+       }
+       button {
+                all: unset;
+                cursor: pointer;
+                outline: revert;
+            }
