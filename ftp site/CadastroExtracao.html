@@ -3,11 +3,11 @@
 <head>
 
 
-     <meta charset="utf-8">
+  <meta charset="utf-8">
 	<title>| CADASTRO EXTRAÇÃO |</title>
 	<h2>CADASTRO EXTRAÇÃO</h2>
 	<link rel="stylesheet" href="css/estilo1.css"/>
-  <script src="cadastro.js"></script>
+ 
 	
 </head>
 <style>
@@ -46,11 +46,47 @@ background: url("img/img01.jpg");
   <td width="70" bgcolor="#ffff66"><center>DOMINGO</center></td>
   <td width="70" bgcolor="#ffff66"><center></center></td>
 </tr></center>
-<tr>
-  <td width="90"><center>PT-PB 9:40</center></td><td width="90"><center>9:40</center></td><td width="90"><center>9:35</center></td><td width="100"><center><input type="radio" name="PT-PB 9:40" value="v1" id="premio10">10<input type="radio" name="PT-PB 9:40" value="v2" id="premio7">7<input type="radio" name="PT-PB 9:40" value="v3" id="premio5">5<td width="70"><center><input type="checkbox" name="segunda"></center></td></td><td width="70"><center><input type="checkbox" name="terca"></center></td></td><td width="70"><center><input type="checkbox" name="quarta"></center></td></td><td width="70"><center><input type="checkbox" name="quinta"></center></td></td><td width="70"><center><input type="checkbox" name="sexta"></center></td></td><td width="70"><center><input type="checkbox" name="sabado"></center></td></td><td width="70"><center><input type="checkbox" name="domingo"></center></td>
+
+
+
+
+
+<tr id="linha1">
+  <td width="90" id="descricao1"><center>PT-PB 9:40</center></td>
+  <td width="90" id="horario1"><center>9:40</center></td>
+  <td width="90" id="bloqueio1"><center>9:35</center></td>
+  <td width="100"><center>
+  <input type="radio" name="PT-PB 9:40" value="10" id="premio10">10
+  <input type="radio" name="PT-PB 9:40" value="7" id="premio7">7
+  <input type="radio" name="PT-PB 9:40" value="5" id="premio5">5
+  </center></td>
+  <td width="70"><center><input type="checkbox" name="segunda" id="segunda1"></center></td>
+<td width="70"><center><input type="checkbox" name="terca" id="terca1"></center></td>
+<td width="70"><center><input type="checkbox" name="quarta" id="quarta1"></center></td>
+<td width="70"><center><input type="checkbox" name="quinta" id="quinta1"></center></td>
+<td width="70"><center><input type="checkbox" name="sexta" id="sexta1"></center></td>
+<td width="70"><center><input type="checkbox" name="sabado" id="sabado1"></center></td>
+<td width="70"><center><input type="checkbox" name="domingo" id="domingo1"></center></td>
   <td width="70"><center><button type="submit" class="bt bt-vm">DESATIVAR</button></center></td>
 </tr>
-<tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<tr>
   <td width="90"><center>PT-PB 20:40</center></td><td width="90"><center>20:40</center></td><td width="90"><center>20:35</center></td><td width="120"><center><input type="radio" name="PT-PB 20:40" value="v1" id="premio10">10<input type="radio" name="PT-PB 20:40" value="v2" id="premio7">7<input type="radio" name="PT-PB 20:40" value="v3" id="premio5">5<td width="70"><center><input type="checkbox" name="segunda"></center></td></td><td width="70"><center><input type="checkbox" name="terca"></center></td></td><td width="70"><center><input type="checkbox" name="quarta"></center></td></td><td width="70"><center><input type="checkbox" name="quinta"></center></td></td><td width="70"><center><input type="checkbox" name="sexta"></center></td></td><td width="70"><center><input type="checkbox" name="sabado"></center></td></td><td width="70"><center><input type="checkbox" name="domingo"></center></td>
   <td width="70"><center><button type="submit" class="bt bt-vm">DESATIVAR</button></center></td>
 </tr>
@@ -99,19 +135,28 @@ background: url("img/img01.jpg");
   <td width="90"><center>FEDERAL</center></td><td width="90"><center>19:00</center></td><td width="90"><center>18:55</center></td><td width="100"><center><input type="radio" name="FEDERAL" value="v1" id="premio10">10<input type="radio" name="FEDERAL" value="v2" id="premio7">7<input type="radio" name="FEDERAL" value="v3" id="premio5">5<td width="70"><center><input type="checkbox" name="segunda"></center></td></td><td width="70"><center><input type="checkbox" name="terca"></center></td></td><td width="70"><center><input type="checkbox" name="quarta"></center></td></td><td width="70"><center><input type="checkbox" name="quinta"></center></td></td><td width="70"><center><input type="checkbox" name="sexta"></center></td></td><td width="70"><center><input type="checkbox" name="sabado"></center></td></td><td width="70"><center><input type="checkbox" name="domingo"></center></td>
   <td width="70"><center><button type="submit" class="bt bt-vm">DESATIVAR</button></center></td>
 </tr>
+
 <tr>
   <td width="90"><center>TESTE APOSTAR</center></td><td width="90"><center>12:00</center></td><td width="90"><center>11:55</center></td><td width="100"><center><input type="radio" name="TESTE APOSTAR" value="v1" id="premio10">10<input type="radio" name="TESTE APOSTAR" value="v2" id="premio7">7<input type="radio" name="TESTE APOSTAR" value="v3" id="premio5">5<td width="70"><center><input type="checkbox" name="segunda"></center></td></td><td width="70"><center><input type="checkbox" name="terca"></center></td></td><td width="70"><center><input type="checkbox" name="quarta"></center></td></td><td width="70"><center><input type="checkbox" name="quinta"></center></td></td><td width="70"><center><input type="checkbox" name="sexta"></center></td></td><td width="70"><center><input type="checkbox" name="sabado"></center></td></td><td width="70"><center><input type="checkbox" name="domingo"></center></td>
-  <td width="70"><center><button type="submit" class="bt bt-vm">DESATIVAR</button></center></td>
+  <td width="70"><center><button type="button" </button>class="bt bt-vm">DESATIVAR</button></center></td>
 </tr>
 </table></center>
 <tr>
+-->
+
   
 </tr>
+
+
+
+
+
 &emsp;
 <div id="rodape">   
   <a href="index.html"><img border="0" src="img/botaovoltar.jpg" width="80px" height="30px" /></a>                             
 
-  <button type="submit" aria-label="" id="formbutton">
+
+  <button aria-label="" id="btn" type="submit" onclick="submitForm(); return false">
       <img src="img/botaocadastrar1.jpg" width="80px" height="30px" />
   </button>
 
@@ -131,4 +176,5 @@ background: url("img/img01.jpg");
 </div>
 
 </body>
+<script src="cadastro.js"></script>
 </html>
