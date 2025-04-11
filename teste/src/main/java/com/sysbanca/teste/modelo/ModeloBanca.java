@@ -24,9 +24,9 @@ public class ModeloBanca {
     @NotNull
     private String descricao;
     @NotNull
-    private Time horario;
+    private String horario;
     @NotNull
-    private Time bloqueio;
+    private String bloqueio;
     
     private int premiacao;
 

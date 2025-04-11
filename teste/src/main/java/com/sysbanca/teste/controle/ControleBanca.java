@@ -26,22 +26,24 @@ public class ControleBanca {
     @Autowired
     private ServicoBanca sb;
 
-    //metodo de postagem
-    /*@PostMapping("/cadastrar")
+
+    @PostMapping("/cadastrar")
     public ResponseEntity<?> cadastrar(@RequestBody ModeloBanca mb){
         
         System.out.println("oi");
+        System.out.println(mb.getPremiacao() +" "+ mb.getQuarta());
         return sb.cadastrar(mb);
         
      
         
-    }*/
+    }
+    /*
     @PostMapping(path = "/cadastrar", consumes = { MediaType.ALL_VALUE })
     public String postMethodName( @RequestBody String teste1) {
         System.out.println(teste1);
         return teste1;
     }
-    
+     */
 
     //metodo de alterar
     /*
