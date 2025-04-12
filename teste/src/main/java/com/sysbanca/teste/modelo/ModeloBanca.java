@@ -1,13 +1,12 @@
 package com.sysbanca.teste.modelo;
 
+import java.sql.Time;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotNull;
-
-import java.sql.Time;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -17,19 +16,17 @@ import lombok.Setter;
 @Setter
 public class ModeloBanca {
     
+    //Atributos
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long codigo;
-    
     @NotNull
     private String descricao;
     @NotNull
-    private String horario;
+    private Time horario;
     @NotNull
-    private String bloqueio;
-    
+    private Time bloqueio;
     private int premiacao;
-
     private String segunda;
     private String terca;
     private String quarta;

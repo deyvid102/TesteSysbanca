@@ -23,12 +23,34 @@ public class ServicoBanca {
         return rb.findAll();
     }
 
-    //Método para cadastro
-    public ResponseEntity <?> cadastrar(ModeloBanca mb){
-        
-        return new ResponseEntity<ModeloBanca>(rb.save(mb), HttpStatus.CREATED);
+    //Método para cadastrar e alterar
+        public ResponseEntity <?> cadastrarAlterar(ModeloBanca mb, String acao){
 
+            if(mb.getDescricao().equals("") ){
+            rm.setMensagem("A descrição é obrigatória!");
+            return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
+            }else if(mb.getHorario().equals("")){
+                rm.setMensagem("O horário é obrigatória!");
+            return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
+            }else if(mb.getBloqueio().equals("")){
+                rm.setMensagem("O Bloqueio é obrigatória!");
+            return new ResponseEntity<RespostaModelo>(rm, HttpStatus.BAD_REQUEST);
+            }
+            else{
+                if(acao.equals("cadastrar")){
+                    return new ResponseEntity<ModeloBanca>(rb.save(mb), HttpStatus.CREATED);
+                }else{
+                    return new ResponseEntity<ModeloBanca>(rb.save(mb), HttpStatus.OK);
+                }
+            }
+        }
+
+        //Metodo para deletar
+        public ResponseEntity <RespostaModelo> deletar(long codigo){
+            rb.deleteById(codigo);
+            rm.setMensagem("Removido com sucesso!");
+            return new ResponseEntity<RespostaModelo>(rm, HttpStatus.OK);
+        }
     }
 
 
-}
